@@ -15,14 +15,32 @@ Dataset
 The dataset contains 40,791 football player records with the following features:
 
 Is_top_5_League: Whether player is in a top 5 league (0/1)
+
+
 Based_rich_nation: Whether club is from a wealthy nation (0/1)
+
+
 Is_top_ranked_nation: Player's national team ranking tier (0/1/2)
+
+
 EU_National: Whether player is an EU national (0/1)
+
+
 Caps: Number of international appearances
+
+
 Apps: Number of club appearances
+
+
 Age: Player's age
+
+
 Reputation: Player reputation score (0-10000)
+
+
 Is_top_prev_club: Whether previous club was top-tier (0/1)
+
+
 Salary: Annual salary in dollars (target variable)
 
 Solution Approach
@@ -34,28 +52,10 @@ Model comparison and hyperparameter tuning
 Deployment as a web service for real-time predictions
 
 
-Project Structure
-├── data/
-│   └── wages.csv                 # Dataset
-├── notebooks/
-│   └── eda.ipynb                 # Exploratory Data Analysis
-├── src/
-│   ├── train.py                  # Model training script
-│   └── predict.py                # Prediction service
-├── models/
-│   ├── best_model.pkl            # Trained model
-│   └── scaler.pkl                # Feature scaler
-├── Dockerfile                     # Docker configuration
-├── requirements.txt               # Python dependencies
-├── Pipfile                        # Pipenv configuration
-├── bentofile.yaml                # BentoML configuration
-├── deployment/
-│   ├── kubernetes/
-│   │   ├── deployment.yaml
-│   │   └── service.yaml
-│   └── cloud/
-│       └── deploy.sh
-└── README.md     
+
+
+
+
 
 
 
@@ -63,10 +63,7 @@ Installation & Setup
 Prerequisites
 
 Python 3.9+
-Docker (for containerization)
-kubectl (for Kubernetes deployment)
 
-
-Python 3.9+
 Docker (for containerization)
+
 kubectl (for Kubernetes deployment)
